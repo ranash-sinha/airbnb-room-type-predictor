@@ -68,5 +68,5 @@ Data → Preprocessing → Model → Prediction → FastAPI → Web Application
 ## Run Locally
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirement.txt
 uvicorn main:app --reload
