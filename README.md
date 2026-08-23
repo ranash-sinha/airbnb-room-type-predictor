@@ -24,7 +24,9 @@ Predict whether an Airbnb listing is:
 
 ## Model Performance
 
-| Model | Accuracy | F1 Score |
+Four classification models were evaluated on the Airbnb room-type prediction task.
+
+| Model | Accuracy | Macro F1 |
 |---|---:|---:|
 | Logistic Regression | 66.3% | 0.526 |
 | Decision Tree | 78.4% | 0.650 |
@@ -37,17 +39,6 @@ Predict whether an Airbnb listing is:
 
 - Accuracy: **85.2%**
 - F1 Score: **0.736**
-
-## Model Performance
-
-Four classification models were evaluated on the Airbnb room-type prediction task.
-
-| Model | Accuracy | Macro F1 |
-|---|---:|---:|
-| Logistic Regression | 66.3% | 0.526 |
-| Decision Tree | 78.4% | 0.650 |
-| Random Forest | **85.2%** | **0.736** |
-| Gradient Boosting | 85.0% | 0.708 |
 
 ### Final Random Forest Evaluation
 
