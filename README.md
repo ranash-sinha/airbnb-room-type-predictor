@@ -22,6 +22,22 @@ Predict whether an Airbnb listing is:
 - Scikit-learn
 - Classification
 
+## Model Performance
+
+| Model | Accuracy | F1 Score |
+|---|---:|---:|
+| Logistic Regression | 66.3% | 0.526 |
+| Decision Tree | 78.4% | 0.650 |
+| Random Forest | **85.2%** | **0.736** |
+| Gradient Boosting | 85.0% | 0.708 |
+
+### Best Model
+
+**Random Forest** achieved the best overall performance with:
+
+- Accuracy: **85.2%**
+- F1 Score: **0.736**
+
 ## Backend
 
 - FastAPI
