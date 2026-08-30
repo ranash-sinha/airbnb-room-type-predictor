@@ -1,4 +1,5 @@
 // Point this to the local FastAPI application
+
 const API_BASE_URL = "https://airbnb-room-type-predictor-k3d3.onrender.com";
 const PREDICT_ENDPOINT = `${API_BASE_URL}/predict`;
 const HEALTH_ENDPOINT = `${API_BASE_URL}/`;
@@ -204,6 +205,7 @@ function buildProbList(paired, predicted) {
   probList.innerHTML = "";
   
   // 1. Add a small section header for extra clarity
+  
   const header = document.createElement("div");
   header.className = "prob-header";
   header.textContent = "Confidence Levels by Room Type";
@@ -220,6 +222,7 @@ function buildProbList(paired, predicted) {
     name.textContent = cls.label;
 
     // 2. Create a wrapper for the value and the "confidence" label
+    
     const valueWrapper = document.createElement("div");
     valueWrapper.className = "value-wrapper";
 
@@ -232,6 +235,7 @@ function buildProbList(paired, predicted) {
     confLabel.textContent = "confidence";
 
     // Append the number and the label side-by-side
+    
     valueWrapper.appendChild(value);
     valueWrapper.appendChild(confLabel);
 
