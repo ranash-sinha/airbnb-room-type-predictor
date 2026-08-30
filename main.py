@@ -22,7 +22,8 @@ COLUMNS = ["latitude", "longitude", "price", "minimum_nights",
 
 model = joblib.load("Model_Pipeline.pkl")  # Load the pre-trained model pipeline
 
-#Pydantic Model = the input validation
+# Pydantic Model = the input validation
+
 class Features(BaseModel):
     latitude: float = Field(..., ge=-90, le=90, description="Latitude coordinate")
     longitude: float = Field(..., ge=-180, le=180, description="Longitude coordinate")
